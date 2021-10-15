@@ -11,7 +11,8 @@ prod['desconto legal'] = 0.40 // its also a attribute. This goes against clean c
 
 console.log(prod)
 
-//declaring all at once:const prod2 = {
+//declaring all at once:
+const prod2 = {
     nome: 'Camisa Cropped',
     preco: 35.90,
     ['descontinho básico']: 0.50,
