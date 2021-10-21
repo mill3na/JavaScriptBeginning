@@ -23,10 +23,3 @@ console.log(cliente) // all the attributes
 
 
 
-const test = {
-    print : `Oi`
-}
-
-test.print =`Oi não`
-
-console.log(test.print)
