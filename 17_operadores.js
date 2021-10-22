@@ -61,4 +61,4 @@ const {rua: r, numero: nu} = pessoa
 
 const {conta : {agencia, num}} = pessoa
 
-console.log(agencia, num)
+// console.log(agencia, num) // TypeError: Cannot destructure property `agencia` of 'undefined' or 'null'.
