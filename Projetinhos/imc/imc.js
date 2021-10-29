@@ -3,6 +3,29 @@ const calcular = document.getElementById('calcular')
 
 const resultado = document.getElementById('peso')
 
+function classifica (valorIMC) {
+
+    if (valorIMC < 18.5){
+        mensagem = 'abaixo do peso.'
+    }
+    else if (valorIMC < 25){
+        mensagem = 'com peso ideal.'
+    }
+    else if (valorIMC < 30){
+        mensagem = 'levemente acima do peso.'
+    }
+    else if (valorIMC < 35){
+        mensagem = 'obesidade grau 1.'
+    }
+    else if (valorIMC < 40){
+        mensagem = 'obesidade grau 2.'
+    }
+    else{
+        mensagem = 'obesidade grau 3. Cuidado!'
+    }
+
+    return mensagem
+}
 
 function imc(){
     const nome = document.getElementById('nome').value
@@ -19,25 +42,7 @@ function imc(){
 
         const valorIMC = (peso / (Math.pow(altura, 2))).toFixed(2)
         
-        if (valorIMC < 18.5){
-            mensagem = 'abaixo do peso.'
-        }
-        else if (valorIMC < 25){
-            mensagem = 'com peso ideal.'
-        }
-        else if (valorIMC < 30){
-            mensagem = 'levemente acima do peso.'
-        }
-        else if (valorIMC < 35){
-            mensagem = 'obesidade grau 1.'
-        }
-        else if (valorIMC < 40){
-            mensagem = 'obesidade grau 2.'
-        }
-        else{
-            mensagem = 'obesidade grau 3. Cuidado!'
-        }
-        resultado.textContent = `${nome}, seu IMC é ${valorIMC} e você está ${mensagem}`
+        resultado.textContent = `${nome}, seu IMC é ${valorIMC} e você está ${classifica(valorIMC)}`
     }
 
 
