@@ -34,8 +34,14 @@ console.log(num1 === num2)
 
 const resultado = nota => nota >=7 ? 'Aprovado' : 'Reprovado'
 
-//3 valores : expressao relacional, valor para verdadeiro, valor para falso
+//3 valores : [expressao relacional que retorna verdadeiro ou falso] ? [valor para resultado verdadeiro] : [valor para resultado falso]
 
 
 console.log(resultado(7.1))
 console.log(resultado(6.7))
+
+// a função também poderia ser escrita assim: 
+const status = nota => {
+    nota >=7 ? 'Aprovado' : 'Reprovado'
+}
+//nota já vai atuar como uma espécie de return por causa do uso do operador ternário. Lembrando que nota é um parâmetro
