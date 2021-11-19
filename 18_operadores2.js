@@ -35,7 +35,7 @@ const obj = {max : 50, min : 40}
 function rand2([min = 0, max = 1000]){
     if (min > max) [min, max] = [max, min]
     const valor = Math.random()* (max - min) + min
-    return Math.floor(valor)
+    return Math.floor(valor) // retorna o menor valor dos dois (.floor), diferentemente da outra função
 }
 
 console.log(rand2([50, 40])) // retorna um valor aleatório com esses limites passados como parâmetro
@@ -46,4 +46,4 @@ console.log(rand2([, 90])) // pega o valor padrão para o mínimo, já que não 
 
 console.log(rand2([])) // pega os dois valores padrão definidos
 
-console,log(rand2())
+//console,log(rand2()) // erro
