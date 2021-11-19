@@ -31,5 +31,7 @@ console.log(module.exports)
 // let: local
 // variaveis sem var e let: no escopo global
 
-abc = 123
-console.log(global.abc)
+abc = 123 // não é indicado, ok?
+console.log(global.abc) // 123
+
+//Obs: isso é node.
