@@ -35,4 +35,6 @@ const obj2 = {name: 'Mileninha'}
 
 // agora ele ainda dá erro, mas imprime a nossa mensagem.
 
-imprimirNomeGritado(obj2)
+imprimirNomeGritado(obj2) // aqui funciona, pois passamos o objeto correto. Executa o try e o finally, como esperado.
+
+//obs: evite mostrar para o usuário os detalhes técnicos, coisas em outras línguas e mensagens que o  assuste, ok? Pelo amor de Zeus
